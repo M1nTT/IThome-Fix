@@ -3,7 +3,7 @@
 * 去除博客版信息流广告
 * 限制图片宽度及添加圆角
 
-IT之家博客版：https://www.ithome.com/blog/
+IT之家博客版：https://www.ithome.com/blog/  
 建议搭配 AdGuard 使用
 
 ![ITHome-Fix](ITHome-Fix.png)
