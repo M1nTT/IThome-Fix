@@ -15,8 +15,8 @@ Just manually created ......
 // @name         IThome Fix
 // @namespace    http://your-namespace.com
 // @version      1.0
-// @description  Enhance ithome.com by rounding images and removing certain ads
-// @author       You
+// @description  去除「IT之家」博客版信息流广告
+// @author       https://blog.tongmingzhi.com
 // @match        https://www.ithome.com/*
 // @grant        none
 // ==/UserScript==
