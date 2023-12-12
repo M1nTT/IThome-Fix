@@ -8,7 +8,7 @@ IT之家博客版：https://www.ithome.com/blog/
 
 ![ITHome-Fix](ITHome-Fix.png)
 
-在线安装：https://greasyfork.org/zh-CN/scripts/481998-ithome-fix
+在线安装：https://greasyfork.org/scripts/481998-ithome-fix
 
 手动安装：
 
