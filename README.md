@@ -17,7 +17,7 @@ IT之家博客版：https://www.ithome.com/blog/
 // ==UserScript==
 // @name         IThome Fix
 // @namespace    http://your-namespace.com
-// @version      1.0
+// @version      2.0
 // @description  去除「IT之家」博客版信息流广告
 // @author       https://blog.tongmingzhi.com
 // @match        https://www.ithome.com/*
@@ -46,11 +46,35 @@ IT之家博客版：https://www.ithome.com/blog/
         });
     }
 
+    // Function to observe DOM changes
+    function observeDOM() {
+        var targetNode = document.body;
+
+        var config = { childList: true, subtree: true };
+
+        var callback = function(mutationsList, observer) {
+            for (var mutation of mutationsList) {
+                if (mutation.type === 'childList') {
+                    // Content has changed, re-run the functions
+                    setRoundedImages();
+                    removeAds();
+                }
+            }
+        };
+
+        var observer = new MutationObserver(callback);
+        observer.observe(targetNode, config);
+    }
+
     // Wait for the page to fully load
     window.addEventListener('load', function() {
         // Execute both functions
         setRoundedImages();
         removeAds();
+
+        // Observe DOM changes for continuous effectiveness
+        observeDOM();
     });
 })();
+
 ```
